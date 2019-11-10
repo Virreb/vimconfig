@@ -12,24 +12,19 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'tmhedberg/SimpylFold'
 Plugin 'vim-scripts/indentpython'
 Bundle 'Valloric/YouCompleteMe'
-Plugin 'scrooloose/syntastic'
+Plugin 'vim-syntastic/syntastic'
 Plugin 'nvie/vim-flake8' " PEP8 checking
 Plugin 'jnurmine/Zenburn'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'scrooloose/nerdtree'
 Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
-
-
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
 
 
-
-
 " GENERAL SETTINGS
-
-" split at specifik areas
+" split at specific areas
 set splitbelow
 set splitright
 
@@ -68,7 +63,6 @@ let g:ycm_autoclose_preview_window_after_completion=1
 map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
 
 
-
 " PYTHON SETTINGS
 " indent for PEP8
 au BufNewFile,BufRead *.py
@@ -95,7 +89,6 @@ let python_highlight_all=1
 syntax on
 
 let NERDTreeIgnore=['\.pyc$', '\~$'] "ignore files in NERDTree
-
 
 
 " COLOR SCHEMES
